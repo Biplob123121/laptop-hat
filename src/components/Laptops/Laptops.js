@@ -29,7 +29,7 @@ const Laptops = () => {
                     <h3>Selected Laptops :</h3>
 
                     <button>CHOOSE 1 FOR ME</button>
-                    <button>Choose Again</button>
+                    <button>CHOOSE AGAIN</button>
                 </div>
            </div>
     );
