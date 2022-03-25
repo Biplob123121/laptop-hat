@@ -1,0 +1,26 @@
+.cart{
+    background-color: rgb(235, 223, 223);
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(204, 201, 201);
+    border: 2px solid rgb(204, 201, 201);
+}
+.cart img{
+    background-color: rgb(222, 224, 226);
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+}
+.cart-info{
+    padding: 0px 20px;
+}
+.cart-btn{
+    width: 100%;
+    background-color: rgb(240, 158, 146);
+    color: white;
+    font-weight: 700;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+.cart-btn:hover{
+    background-color: orange;
+}

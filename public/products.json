@@ -1,0 +1,65 @@
+[
+    {
+      "id": "1",
+      "picture": "./images/lap-1.png",
+      "name": "HP EliteBook 2550p",
+      "price": "55000",
+      "brand": "HP"
+    },
+    {
+      "id": "2",
+      "picture": "./images/lap-2.png",
+      "name": "HP Pavillion 550p",
+      "price": "50000",
+      "brand": "HP"
+    },
+    {
+      "id": "3",
+      "picture": "./images/lap-3.png",
+      "name": "HP Envy 370s",
+      "price": "65000",
+      "brand": "HP"
+    },
+    {
+      "id": "4",
+      "picture": "./images/lap-4.png",
+      "name": "TechHead 370H",
+      "price": "45000",
+      "brand": "ASUS"
+    },
+    {
+      "id": "5",
+      "picture": "./images/lap-5.png",
+      "name": "Asus Pro 540SH",
+      "price": "51000",
+      "brand": "ASUS"
+    },
+    {
+      "id": "6",
+      "picture": "./images/lap-6.png",
+      "name": "Del PVH 300",
+      "price": "48000",
+      "brand": "DEL"
+    },
+    {
+      "id": "7",
+      "picture": "./images/lap-7.png",
+      "name": "HP Pavillion 750P",
+      "price": "55000",
+      "brand": "HP"
+    },
+    {
+      "id": "8",
+      "picture": "./images/lap-8.png",
+      "name": "HP EliteBook 2200p",
+      "price": "62000",
+      "brand": "HP"
+    },
+    {
+      "id": "9",
+      "picture": "./images/lap-9.png",
+      "name": "HP Gaming 300PH",
+      "price": "75000",
+      "brand": "HP"
+    }
+  ]
