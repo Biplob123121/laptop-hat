@@ -27,8 +27,8 @@ const Laptops = () => {
                 </div>
                 <div className='side-bar'>
                     <h3>Selected Laptops :</h3>
-                    
-                    <button>Choose for me</button>
+
+                    <button>CHOOSE 1 FOR ME</button>
                     <button>Choose Again</button>
                 </div>
            </div>
