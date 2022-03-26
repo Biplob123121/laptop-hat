@@ -14,7 +14,7 @@ const Laptop = (props) => {
                 <p><small>Brand : {brand}</small></p>
             </div>
             <div >
-                <button onClick={() =>getSelectedItem(props.laptop)} className='card-btn'>CHOOSE NOW</button>
+                <button onClick={() =>getSelectedItem(laptop)} className='card-btn'>CHOOSE NOW</button>
             </div>
         </div>
     );

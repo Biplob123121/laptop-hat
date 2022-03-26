@@ -1,22 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
+    //console.log(props);
+    const [showProuduct, setShowProduct] =useState([]);
+    const cart = props.selected;
 
-    const cart = props.selectedItem;
-    let showCart;
-    for(const item of cart){
-         console.log(item.name);
-     }
+
+    //  const chooseOne = () =>{
+    //     nCart = 0;
+    //  }
 
     return (
         <div className='cart'>
                 <h3>Selected Laptops :</h3>
                     <div>
-                        <h3>
-                            {
-                            }
-                        </h3>
+                       {cart.map(item =><h4 key={item.id}>{item.name}</h4>)}
                     </div>
                     <button>CHOOSE 1 FOR ME</button>
                     <button>CHOOSE AGAIN</button>

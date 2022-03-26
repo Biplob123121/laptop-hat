@@ -6,7 +6,7 @@ import './Laptops.css';
 
 const Laptops = () => {
     const [laptops, setlaptops] = useState([]);
-    const [selectedItem, setSelectedItem] = useState ([]);
+    const [selected, setSelected] = useState ([]);
 
     useEffect( () =>{
         fetch('products.json')
@@ -15,11 +15,16 @@ const Laptops = () => {
     },[])
 
     const getSelectedItem = (laptop) =>{
-        //console.log(laptop);
-        const newItem = [...selectedItem, laptop];
-        setSelectedItem(newItem);   
+           //console.log(laptop);
+           const {id} = laptop;
+           //console.log(id);
+   
+         const newItem = [...selected, laptop];
+         setSelected(newItem);
+         //console.log(selected); 
+  
     }
-
+   //console.log(selectedItem);
     return (
         
             <div className='laptop-container'>
@@ -36,8 +41,9 @@ const Laptops = () => {
                 </div>
                 <div className='side-bar'>
                         <Cart
-                        selectedItem={selectedItem}
-                        key={selectedItem.id}></Cart>
+                        selected={selected}
+                        key={selected.id}
+                        ></Cart>
                 </div>
            </div>
     );
