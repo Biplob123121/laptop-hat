@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Laptop from '../Laptop/Laptop';
 import './Laptops.css';
 
@@ -16,10 +17,9 @@ const Laptops = () => {
     const getSelectedItem = (laptop) =>{
         //console.log(laptop);
         const newItem = [...selectedItem, laptop];
-        setSelectedItem(newItem);
-        
+        setSelectedItem(newItem);   
     }
-    //console.log(selectedItem);
+
     return (
         
             <div className='laptop-container'>
@@ -35,14 +35,9 @@ const Laptops = () => {
                    </div>
                 </div>
                 <div className='side-bar'>
-                    <h3>Selected Laptops :</h3>
-                    <div>
-                        {
-                            selectedItem.map(item => <p key={item.id}>{item.name}</p>)
-                        }
-                    </div>
-                    <button>CHOOSE 1 FOR ME</button>
-                    <button>CHOOSE AGAIN</button>
+                        <Cart
+                        selectedItem={selectedItem}
+                        key={selectedItem.id}></Cart>
                 </div>
            </div>
     );
