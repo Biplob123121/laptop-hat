@@ -18,8 +18,10 @@
     background-color: rgb(240, 158, 146);
     color: white;
     font-weight: 700;
-    padding: 10px 0px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card-btn:hover{
     background-color: orange;

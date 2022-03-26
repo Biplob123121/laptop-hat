@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './Laptop.css';
 
@@ -14,7 +16,9 @@ const Laptop = (props) => {
                 <p><small>Brand : {brand}</small></p>
             </div>
             <div >
-                <button onClick={() =>getSelectedItem(laptop)} className='card-btn'>CHOOSE NOW</button>
+                <button onClick={() =>getSelectedItem(laptop)} className='card-btn'><p style={{marginRight : '10px'}}>CHOOSE NOW</p>
+                <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                </button>
             </div>
         </div>
     );

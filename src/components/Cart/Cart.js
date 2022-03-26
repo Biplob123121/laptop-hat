@@ -17,8 +17,8 @@ const Cart = (props) => {
                     <div>
                        {cart.map(item =><h4 key={item.id}>{item.name}</h4>)}
                     </div>
-                    <button>CHOOSE 1 FOR ME</button>
-                    <button>CHOOSE AGAIN</button>
+                    <button className='cart-btn'>CHOOSE 1 FOR ME</button>
+                    <button className='cart-btn'>CHOOSE AGAIN</button>
         </div>
     );
 };
