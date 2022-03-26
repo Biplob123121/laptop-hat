@@ -1,6 +1,6 @@
 # Laptop Hat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My site link [https://laptophat-01.netlify.app/]
 
 ## Available Scripts
 
