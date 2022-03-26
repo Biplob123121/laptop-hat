@@ -5,6 +5,7 @@ import './Laptops.css';
 
 const Laptops = () => {
     const [laptops, setlaptops] = useState([]);
+    const [selectedItem, setSelectedItem] = useState ([]);
 
     useEffect( () =>{
         fetch('products.json')
@@ -12,6 +13,13 @@ const Laptops = () => {
         .then(data => setlaptops(data));
     },[])
 
+    const getSelectedItem = (laptop) =>{
+        //console.log(laptop);
+        const newItem = [...selectedItem, laptop];
+        setSelectedItem(newItem);
+        
+    }
+    //console.log(selectedItem);
     return (
         
             <div className='laptop-container'>
@@ -21,13 +29,18 @@ const Laptops = () => {
                         {
                             laptops.map(laptop =><Laptop
                             laptop ={laptop}
-                            key ={laptop.id}></Laptop>)
+                            key ={laptop.id}
+                            getSelectedItem ={getSelectedItem}></Laptop>)
                         }
                    </div>
                 </div>
                 <div className='side-bar'>
                     <h3>Selected Laptops :</h3>
-
+                    <div>
+                        {
+                            selectedItem.map(item => <p key={item.id}>{item.name}</p>)
+                        }
+                    </div>
                     <button>CHOOSE 1 FOR ME</button>
                     <button>CHOOSE AGAIN</button>
                 </div>

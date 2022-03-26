@@ -3,7 +3,8 @@ import './Laptop.css';
 
 const Laptop = (props) => {
      //console.log(props);
-     const {picture, name, price, brand} = props.laptop;
+     const {getSelectedItem, laptop} = props;
+     const {picture, name, price, brand} = laptop;
     return (
         <div className='cart'>
             <img src={picture} alt="" />
@@ -13,7 +14,7 @@ const Laptop = (props) => {
                 <p><small>Brand : {brand}</small></p>
             </div>
             <div >
-                <button className='cart-btn'>CHOOSE NOW</button>
+                <button onClick={() =>getSelectedItem(props.laptop)} className='cart-btn'>CHOOSE NOW</button>
             </div>
         </div>
     );
