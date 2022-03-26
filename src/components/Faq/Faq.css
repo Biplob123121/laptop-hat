@@ -1,0 +1,21 @@
+.faq-container{
+    margin: 20px;
+}
+.faqs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.faq{
+    background-color: rgb(235, 223, 223);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgb(204, 201, 201);
+    border: 2px solid rgb(204, 201, 201);
+}
+@media screen and (max-width : 700px) {
+    .faqs{
+        grid-template-columns: 1fr;
+    }
+
+}
